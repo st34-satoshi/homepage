@@ -227,11 +227,33 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <div class="text-center">
-                    <div>
-                        <a class="link-light" href="#links">リンク</a>のSNSかEmailからご連絡ください。
+                <!-- Contact Description -->
+                <p class="text-center text-white mb-5">どんな内容でもお気軽にお問い合わせください。</p>
+                <!-- Contact Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <form id="contactForm" action="https://formspree.io/f/mpwpkykq" method="POST" class="border rounded p-4">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control rounded" id="name" name="name" type="text" placeholder="お名前を入力してください" required />
+                                <label for="name" class="text-secondary">お名前</label>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control rounded" id="email" name="email" type="email" placeholder="name@example.com" required />
+                                <label for="email" class="text-secondary">メールアドレス</label>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control rounded" id="message" name="message" type="text" placeholder="お問い合わせ内容を入力してください" style="height: 10rem" required></textarea>
+                                <label for="message" class="text-secondary">お問い合わせ内容</label>
+                            </div>
+                            <!-- Submit Button-->
+                            <div class="text-center">
+                                <button class="btn btn-xl btn-outline-light rounded" type="submit">送信</button>
+                            </div>
+                        </form>
                     </div>
-                    Email: contact[アット]stu345.com
                 </div>
             </div>
         </section>
